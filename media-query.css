@@ -1,0 +1,123 @@
+/*media query*/
+@media screen and (max-width: 991px){
+    .main-nav{
+        overflow: initial;
+    }
+    .nav-toggle{
+        display: block;
+        margin: 15px;
+    }
+    .nav-links{
+        position: absolute;
+        background-color: white;
+        left: 0;
+        top: -600px;
+        width: 100%;
+        padding-block: 10px;
+        transition: 0.3s ease-in-out;
+    }
+    .nav-links.press{
+        top: 100%;
+    }
+    .nav-links ul{
+        flex-direction: column;
+    }
+    .examples-area{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+    }
+    .examples-card{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 766px){
+    .header-section{
+        flex-wrap: wrap-reverse;
+        gap: 20px;
+    }
+    .header-left{
+        display: flex;
+        max-width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header-section h1{
+        font-size: 32px;
+    }
+    .header-section p{
+        font-size: 16px;
+        padding-block: 10px;
+    }
+    .features-header h2{
+        font-size: 24px;
+        font-weight: 600;
+    }
+    .features-section{
+        background-image: none;
+        margin: 0;
+    }
+    .features-area{
+        justify-content: center;
+    }
+    .features-card{
+        max-width: 100%;
+        gap: 15px;
+    }
+    .features-card-logo{
+        width: 20%;
+    }  
+    .big-features-container{
+        flex-direction: column !important;
+    }
+    .features-text h3{
+    font-size: 28px;
+    margin-bottom: 5px;
+    }
+    .features-text p{
+    padding-right: 0px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    }
+    #back-img{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-left: -40px;
+    padding-left: 40px;
+    padding-right: 0px;
+    margin-bottom: 0px;
+    }
+    .examples-header h2{
+        font-size: 28px;
+        font-weight: 600;
+    }
+    .cta-container-section h3{
+        font-size: 28px;
+    }
+    .cta-container-section div{
+        font-size: 16px;
+    }
+    .footer-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-list{
+        align-items: center;
+    }
+    .subfooter-section{
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+}
+@media screen and (max-width: 430px){
+    .examples-area{
+        display: flex;
+        flex-direction: column;
+    }
+    .examples-card{
+        width: 100%;
+        background-size: 100%;
+    }
+}
